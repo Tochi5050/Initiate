@@ -1,0 +1,57 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Fixed closed loops",
+      "attention": false,
+      "tech": "Dayo Animashaun",
+      "date": "2022-03-14T01:15:49.325Z"
+    },
+    {
+      "id": 2,
+      "message": "Users paired to the server mix",
+      "attention": false,
+      "tech": "Obinna David",
+      "date": "2022-03-14T01:13:50.062Z"
+    },
+    {
+      "id": 3,
+      "message": "Router booster reloaded",
+      "attention": false,
+      "tech": "Otom Deborah",
+      "date": "2022-03-14T01:32:37.391Z"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Dayo",
+      "lastName": "Animashaun"
+    },
+    {
+      "id": 2,
+      "firstName": "Obinna",
+      "lastName": "David"
+    },
+    {
+      "firstName": "Otom",
+      "lastName": "Deborah",
+      "id": 3
+    },
+    {
+      "firstName": "Tochukwu",
+      "lastName": "Chimezie",
+      "id": 6
+    },
+    {
+      "firstName": "Tochukwu",
+      "lastName": "Chimezie",
+      "id": 7
+    },
+    {
+      "firstName": "Chimezie",
+      "lastName": "Tochi",
+      "id": 8
+    }
+  ]
+}

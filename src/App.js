@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import React, {Fragment, useEffect} from 'react';
+import 'materialize-css/dist/css/materialize.min.css'
+import M from 'materialize-css/dist/js/materialize.min.js'
 import './App.css';
+import SearchBar from './components/layout/SearchBar';
+import Logs from './components/logs/Logs';
+import LogButton from './components/button/LogButton';
+import LogModal from './components/modals/LogModal';
+import NewTechsModal from './components/modals/NewTechsModal';
+import TechModal from './components/modals/TechModal';
+import EditLogs from './components/modals/EditLogs';
+import {Provider} from 'react-redux'
+import store from './store';
 
-function App() {
+const App = () => {
+
+  useEffect(() => {
+    //Initialize the js file
+    M.AutoInit();
+})
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+    <Fragment>
+      <SearchBar/>
+      <div className='container'>
+      <LogButton/>
+      <LogModal/>
+      <EditLogs/>
+      <NewTechsModal/>
+      <TechModal/>
+      <Logs/>
+      </div>
+    </Fragment>
+    </Provider>
   );
 }
 
